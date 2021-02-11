@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    // Based on https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
+    // for Node 12
+    "module": "commonjs",
+    "target": "ES2019",
+
+    "rootDir": "src",
+    "outDir": "dist",
+
+    // Enable strict null checks. Enabling this setting is recommended.
+    // Requires TypeScript version 2.0 or later.
+    "strictNullChecks": true,
+
+    // Warn on expressions and declarations with an implied 'any' type.
+    // Enabling this setting is recommended.
+    "noImplicitAny": true,
+
+    // Disable bivariant parameter checking for function types.
+    // Enabling this setting is recommended. Requires TypeScript version 2.6 or later.
+    "strictFunctionTypes": true,
+
+    // Ensure non-undefined class properties are initialized in the constructor.
+    // Enabling this setting is recommended. Requires TypeScript version 2.7 or later.
+    "strictPropertyInitialization": true,
+
+    // Enable stricter checking of of the `bind`, `call`, and `apply` methods
+    // on functions. Enabling this setting is recommended.
+    // Requires TypeScript version 3.2 or later.
+    "strictBindCallApply": true,
+
+    // Raise error on 'this' expressions with an implied any type. Enabling
+    // this setting is recommended. Requires TypeScript version 2.0 or later.
+    "noImplicitThis": true,
+
+    // Report error when not all code paths in function return a value.
+    // Requires TypeScript version 1.8 or later.
+    "noImplicitReturns": true,
+
+    // Parse in strict mode and emit 'use strict' for each source file.
+    // Requires TypeScript version 2.1 or later.
+    "alwaysStrict": true,
+
+    // Emit '__importStar' and '__importDefault' helpers for runtime babel
+    // ecosystem compatibility and enable '--allowSyntheticDefaultImports' for
+    // typesystem compatibility. Enabling this setting is recommended.
+    // Requires TypeScript version 2.7 or later.
+    "esModuleInterop": true,
+
+    // Report errors in .js files. Requires TypeScript version 2.3 or later.
+    "checkJs": true,
+
+    // Allow javascript files to be compiled. Requires TypeScript version 1.8 or later.
+    "allowJs": true,
+
+    // Generates corresponding d.ts files.
+    "declaration": true,
+
+    // Enables experimental support for ES7 decorators.
+    "experimentalDecorators": true,
+
+    // Emit design-type metadata for decorated declarations in source.
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

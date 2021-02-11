@@ -1,0 +1,72 @@
+{
+  "name": "tpl-ts-jsdoc",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/andreidmt/tpl-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreidmt/tpl-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreidmt/tpl-react/issues"
+  },
+  "keywords": [
+    "template",
+    "starter",
+    "jsdoc",
+    "javascript",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
+  "author": {
+    "name": "Andrei Dumitrescu",
+    "url": "https://github.com/andreidmt"
+  },
+  "license": "BSD-3-Clause",
+  "main": "dist/index.js",
+  "scripts": {
+    "----UTIL": "",
+    "setup": "rm -rf ./node_modules && npm i && npm audit fix",
+    "setup:ci": "npm ci && npm audit fix",
+    "update": "npm-check --update",
+    "----BUILD": "",
+    "build": "tsc --skipLibCheck",
+    "----LINT": "",
+    "lint:md": "markdownlint *.md",
+    "lint:js": "eslint --quiet src",
+    "lint": "npm run lint:md && npm run lint:js",
+    "----TEST": "",
+    "pretest": "npm run build",
+    "test": "riteway dist/**/*.test.js | tap-nirvana",
+    "tdd": "nodemon -e js,jsx,json --watch src --exec \"npm test\""
+  },
+  "dependencies": {
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@asd14/eslint-config": "^5.24.1",
+    "@types/debug": "^4.1.5",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^14.14.25",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^31.6.1",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-no-inferred-method-name": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-unicorn": "^28.0.0",
+    "markdownlint-cli": "^0.26.0",
+    "nodemon": "^2.0.7",
+    "npm-check": "^5.9.2",
+    "prettier": "^2.2.1",
+    "riteway": "^6.2.1",
+    "tap-nirvana": "^1.1.0",
+    "typescript": "^4.1.5"
+  }
+}

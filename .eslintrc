@@ -1,0 +1,20 @@
+{
+  "extends": [
+    // Prettier other plugins - https://github.com/asd-xiv/eslint-config
+    "@asd14/eslint-config/targets/node-ts"
+  ],
+  "settings": {
+    // Recommended if you use `eslint_d`. Configuring your editor to use `eslint_d`
+    // will speed up linting 10x, see github.com/mantoni/eslint_d.js
+    "import/cache": {
+      "lifetime": 5
+    }
+  },
+  "rules": {
+    // "@typescript-eslint/ban-types": "off",
+    // "@typescript-eslint/ban-ts-comment": "off",
+
+    // All types are in JSDocs
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  }
+}
