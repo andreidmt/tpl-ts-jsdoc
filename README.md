@@ -10,7 +10,7 @@
 
 * [Why?](#why)
 * [Stack](#stack)
-* [Documentation](#documentation)
+* [Documentation & Tools](#documentation--tools)
 * [Tips](#tips)
 
 <!-- vim-markdown-toc -->
@@ -30,10 +30,12 @@
 * Code formatting: ESLint rules + [prettier](https://github.com/prettier/prettier)
 * Environment variable: [dotenv](https://github.com/motdotla/dotenv)
 
-## Documentation
+## Documentation & Tools
 
 * [Typescript JSDoc compatibility](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
+* [JSDoc](https://jsdoc.app/)
 * [documentation.js](https://github.com/documentationjs/documentation) - Automatic documentation generation from JSDoc
+* [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown)
 
 ## Tips
 
@@ -42,4 +44,4 @@
 * Better repeat yourself than a wrong abstraction
 * Don't fix imaginary future problem
 * Extract code in libraries and test 100%
-* Dont mock, write E2E tests
+* Don't mock, write E2E tests
