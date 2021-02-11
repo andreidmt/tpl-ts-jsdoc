@@ -5,17 +5,17 @@ import { sayHello, sayGoodbye } from "./hello-world"
 describe("sayHello", async assert => {
   assert({
     given: "no arguments",
-    should: 'return "hello" string',
+    should: "return hello string",
     actual: sayHello(),
-    expected: "hello",
+    expected: "hello create lorem ipsum",
   })
 })
 
 describe("sayGoodbye", async assert => {
   assert({
     given: "no arguments",
-    should: "return nonsense goodbye string",
+    should: "return goodbye string",
     actual: sayGoodbye(),
-    expected: "goodbye create lorem ipsum",
+    expected: "goodbye",
   })
 })
