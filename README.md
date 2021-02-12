@@ -20,8 +20,8 @@
 
 * :godmode: Plain JavaScript and JSDoc.
 * :lipstick: TypeScript is good at _types_.
-* :scroll: Types are already part of the docs, repeating creates noise.
-* :two_hearts: Enforce writing docs by giving them static typing powers.
+* :scroll: Types are already part of docs, repeating creates noise.
+* :two_hearts: Enforce writing docs by giving them static typing powers :zap:.
 * :brain: Thinking about _types_ and _code logic_ are different mental activities. One is zoomed-in, focused on what each piece is, the other, zoomed-out and focused on how the data flows from one transition to another.
 
 ## Stack
