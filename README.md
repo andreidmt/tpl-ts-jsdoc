@@ -11,7 +11,8 @@
 * [Why?](#why)
 * [Stack](#stack)
 * [npm scripts](#npm-scripts)
-* [Documentation & Tools](#documentation--tools)
+* [Documentation](#documentation)
+* [Tools](#tools)
 * [Random tips](#random-tips)
 
 <!-- vim-markdown-toc -->
@@ -34,7 +35,7 @@
 
 ## npm scripts
 
-* Delete "node_modules", install packages and run "npm audit fix".
+* Clean package install
 
 ```bash
 # "setup": "rm -rf ./node_modules && npm install && npm audit fix",
@@ -48,14 +49,14 @@ npm run setup
 npm run update
 ```
 
-* Compile "src" folder into "dist" while also generating ".d.ts". See [tsconfig.json](tsconfig.json).
+* Compile "src" folder into "dist" while also generating ".d.ts" - see [tsconfig.json](tsconfig.json)
 
 ```bash
 # "build": "tsc --skipLibCheck",
 npm run build
 ```
 
-* Lint ".md" and ".js" files. See [.eslintrc](.eslintrc).
+* Lint source files - see [.eslintrc](.eslintrc)
 
 ```bash
 # "lint:md": "markdownlint *.md",
@@ -64,29 +65,31 @@ npm run build
 npm run lint
 ```
 
-* Run all ".test.js" files from "dist" folder. See [example test file](src/hello-world.test.js).
+* Run all ".test.js" files from "dist" folder - see [example test file](src/hello-world.test.js)
 
 ```bash
 # "pretest": "npm run build",
-# "test": "riteway dist/**/*.test.js | tap-nirvana",
+# "test": "riteway 'dist/**/*.test.js' | tap-nirvana",
 npm run test
 ```
 
-* Watch changes in "src" folder and run "npm run test".
+* Watch changes in "src" folder and re-run tests
 
 ```bash
-# "tdd": "nodemon --ext js,json --watch src --exec \"npm test\""
+# "tdd": "nodemon --ext js,json --watch src --exec 'npm test'"
 npm run tdd
 ```
 
-## Documentation & Tools
+## Documentation
 
 * [TypeScript JSDoc compatibility](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
 * [JSDoc](https://jsdoc.app/)
-* Parsing tools:
-  * [documentation.js](https://github.com/documentationjs/documentation) - The documentation system for modern JavaScript
-  * [apidoc](https://apidocjs.com/) - Inline Documentation for RESTful web APIs
-  * [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) - Generate markdown documentation from jsdoc-annotated JavaScript
+
+## Tools
+
+* [documentation.js](https://github.com/documentationjs/documentation) - The documentation system for modern JavaScript
+* [apidoc](https://apidocjs.com/) - Inline Documentation for RESTful web APIs
+* [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) - Generate markdown documentation from jsdoc-annotated JavaScript
 
 ## Random tips
 
