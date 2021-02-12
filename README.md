@@ -1,4 +1,4 @@
-<!-- markdownlint-disable line-length -->
+<!-- markdownlint-disable first-line-h1 line-length -->
 
 [![dev-badge](https://david-dm.org/andreidmt/tpl-ts-jsdoc.svg)](https://david-dm.org/andreidmt/tpl-ts-jsdoc)
 
@@ -90,6 +90,8 @@ npm run tdd
 
 ## Tools
 
+* [jsdoc](https://github.com/jsdoc/jsdoc) - An API documentation generator for JavaScript
+* [better-docs](https://github.com/SoftwareBrothers/better-docs) - Beautiful toolbox for JSDoc generated documentation - with 'typescript', 'category' and 'component' plugins
 * [documentation.js](https://github.com/documentationjs/documentation) - The documentation system for modern JavaScript
 * [apidoc](https://apidocjs.com/) - Inline Documentation for RESTful web APIs
 * [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) - Generate markdown documentation from jsdoc-annotated JavaScript
