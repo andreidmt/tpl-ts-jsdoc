@@ -1,5 +1,7 @@
 <!-- markdownlint-disable line-length -->
 
+[![dev-badge](https://david-dm.org/andreidmt/tpl-ts-jsdoc.svg)](https://david-dm.org/andreidmt/tpl-ts-jsdoc)
+
 # tpl-ts-jsdoc
 
 > Plain JavaScript with types by leveraging [TypeScript's JSDoc support](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html).
@@ -14,16 +16,17 @@
 * [Documentation](#documentation)
 * [Tools](#tools)
 * [Random tips](#random-tips)
+* [Changelog](#changelog)
 
 <!-- vim-markdown-toc -->
 
 ## Why?
 
-* :godmode: Plain JavaScript and JSDoc.
-* :lipstick: TypeScript is good at _types_.
-* :scroll: Types are already part of docs, repeating creates noise.
-* :two_hearts: Enforce writing docs by giving them static typing powers :zap:.
-* :brain: Thinking about _types_ and _code logic_ are different mental activities. One is zoomed-in, focused on what each piece is, the other, zoomed-out and focused on how the data flows from one transition to another.
+* :godmode: Plain JavaScript and JSDoc
+* :lipstick: TypeScript is good at _types_
+* :scroll: Types are already part of docs, repeating creates noise
+* :two_hearts: Enforce writing docs by giving them static typing powers :zap:
+* :brain: Thinking about _types_ and _code logic_ are different mental activities. One is zoomed-in, focused on what each piece is, the other, zoomed-out and focused on how the data flows from one transition to another
 
 ## Stack
 
@@ -99,3 +102,7 @@ npm run tdd
 * Don't fix imaginary future problem
 * Extract code in libraries and test 100%
 * If possible, don't mock, E2E test
+
+## Changelog
+
+See the [releases section](https://github.com/andreidmt/tpl-ts-jsdoc/releases) for details.
