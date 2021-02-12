@@ -88,4 +88,4 @@ npm run tdd
 * Better repeat yourself than a wrong abstraction
 * Don't fix imaginary future problem
 * Extract code in libraries and test 100%
-* If possible, don't mock, write E2E tests
+* If possible, don't mock, E2E test
