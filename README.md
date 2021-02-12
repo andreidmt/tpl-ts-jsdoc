@@ -2,7 +2,7 @@
 
 # tpl-ts-jsdoc
 
-> Plain JavaScript with TypeScript types by leveraging [TypeScript's JSDoc support](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html).
+> Plain JavaScript with types by leveraging [TypeScript's JSDoc support](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html).
 
 ![Vim with Typescript evaluating JavaScript code](docs/screenshot.png)
 
@@ -39,6 +39,13 @@
 ```bash
 # "setup": "rm -rf ./node_modules && npm install && npm audit fix",
 npm run setup
+```
+
+* Check for package updates (with interactive console)
+
+```bash
+# "update": "npm-check --update",
+npm run update
 ```
 
 * Compile "src" folder into "dist" while also generating ".d.ts". See [tsconfig.json](tsconfig.json).
