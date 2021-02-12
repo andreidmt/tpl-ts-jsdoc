@@ -38,8 +38,8 @@
     "lint": "npm run lint:md && npm run lint:js",
     "----TEST": "",
     "pretest": "npm run build",
-    "test": "riteway dist/**/*.test.js | tap-nirvana",
-    "tdd": "nodemon --ext js,json --watch src --exec \"npm test\""
+    "test": "riteway 'dist/**/*.test.js' | tap-nirvana",
+    "tdd": "nodemon --ext js,json --watch src --exec 'npm test'"
   },
   "dependencies": {
     "debug": "^4.3.1",
