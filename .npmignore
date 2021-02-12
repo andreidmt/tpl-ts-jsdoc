@@ -1,2 +1,9 @@
-tsconfig.json
+docs
 src
+.editorconfig
+.eslintrc
+.gitignore
+.prettierrc
+CHANGELOG.md
+tsconfig.json
+
