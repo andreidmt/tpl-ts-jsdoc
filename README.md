@@ -2,7 +2,7 @@
 
 # tpl-ts-jsdoc
 
-> Plain JavaScript with TypeScript as JSDoc comments.
+> Plain JavaScript with TypeScript types by leveraging [TypeScript's JSDoc support](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html).
 
 ![Vim with Typescript evaluating JavaScript code](docs/screenshot.png)
 
