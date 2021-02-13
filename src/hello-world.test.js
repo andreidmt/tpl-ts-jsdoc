@@ -7,7 +7,7 @@ describe("sayHello", async assert => {
     given: "no arguments",
     should: "return hello string",
     actual: sayHello(),
-    expected: "hello create lorem ipsum",
+    expected: { beep: "hello lorem", boop: "hello ipsum" },
   })
 })
 

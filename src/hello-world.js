@@ -1,25 +1,29 @@
 /**
  * @returns {string}
  */
-function sayGoodbye() {
-  return "goodbye"
-}
+const sayGoodbye = () => "goodbye"
+
+/**
+ * @typedef  {Object} SayHelloFnReturn
+ *
+ * @property {string} beep
+ * @property {string} boop
+ */
 
 /**
  * Function with types infered from docs, 2 birds in hand.
  *
- * @param   {Object}          [props={}]
- * @param   {"create"|"read"} [props.test="create"]
- * @param   {string}          [props.name="lorem"]
+ * @param   {Object}           [props={}]
+ * @param   {"lorem"|"dolor"}  [props.foo="lorem"]
+ * @param   {string}           [props.bar="ipsum"]
  *
- * @returns {string}
+ * @returns {SayHelloFnReturn}
  */
-const sayHello = ({ test = "create", name = "lorem" } = {}) => {
-  const bar = `${test} ${name} ipsum`
+const sayHello = ({ foo = "lorem", bar = "ipsum" } = {}) => ({
+  beep: `hello ${foo}`,
+  boop: `hello ${bar}`,
+})
 
-  return `hello ${bar}`
-}
+const robotSays = sayHello({ foo: "dolor" })
 
-const x = sayHello({ test: "create" })
-
-export { x, sayHello, sayGoodbye }
+export { robotSays, sayHello, sayGoodbye }
