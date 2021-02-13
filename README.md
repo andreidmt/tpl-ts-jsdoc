@@ -15,7 +15,6 @@
 * [Why?](#why)
 * [Stack](#stack)
 * [npm scripts](#npm-scripts)
-* [Documentation](#documentation)
 * [Tools](#tools)
 * [FAQ](#faq)
 * [Random tips](#random-tips)
@@ -33,7 +32,7 @@
 
 ## Stack
 
-* Main: JavaScript + types using [TypeScript JSDoc compatibility](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
+* Main: JavaScript + types using [TypeScript support](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) for [JSDoc](https://jsdoc.app/)
 * Testing: [riteway](https://github.com/ericelliott/riteway)
 * Linting: [ESLint](https://github.com/eslint/eslint), [@asd14/eslint-config](https://github.com/asd-xiv/eslint-config)
 * Formatting: ESLint rules + [prettier](https://github.com/prettier/prettier)
@@ -85,11 +84,6 @@ npm run test
 # "tdd": "nodemon --ext js,json --watch src --exec 'npm test'"
 npm run tdd
 ```
-
-## Documentation
-
-* [TypeScript JSDoc compatibility](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
-* [JSDoc](https://jsdoc.app/)
 
 ## Tools
 
