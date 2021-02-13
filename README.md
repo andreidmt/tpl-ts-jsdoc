@@ -8,6 +8,8 @@
 
 ![Vim with Typescript evaluating JavaScript code](docs/screenshot.png)
 
+![Vim with Typescript evaluating JavaScript code](docs/screenshot-ts-error-wrong-type.png)
+
 <!-- vim-markdown-toc GFM -->
 
 * [Why?](#why)
@@ -31,7 +33,7 @@
 
 ## Stack
 
-* Main: [TypeScript 4](https://github.com/microsoft/TypeScript)
+* Main: JavaScript + types using [TypeScript JSDoc compatibility](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
 * Testing: [riteway](https://github.com/ericelliott/riteway)
 * Linting: [ESLint](https://github.com/eslint/eslint), [@asd14/eslint-config](https://github.com/asd-xiv/eslint-config)
 * Formatting: ESLint rules + [prettier](https://github.com/prettier/prettier)
@@ -101,7 +103,7 @@ npm run tdd
 
 _1. Can I use both JSDocs infered types and TypeScript annotations?_
 
-No, TypeScript draws a hard line between what functionalities it provides for `.js` and `.ts` files. TypeScript specific syntax is only available in `.ts` files. They want you to write TypeScript, not JavaScript with types.
+No, TypeScript draws a hard line between functionalities provided in `.js` and `.ts` files. TypeScript specific syntax is only available in `.ts` files, while JSDoc interpretation in `.js`.
 
 ![TypeScript not allowing type annotations in .js files](docs/screenshot-ts-error-annotations.png)
 
