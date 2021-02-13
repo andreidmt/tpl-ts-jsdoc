@@ -15,6 +15,7 @@
 * [npm scripts](#npm-scripts)
 * [Documentation](#documentation)
 * [Tools](#tools)
+* [FAQ](#faq)
 * [Random tips](#random-tips)
 * [Changelog](#changelog)
 
@@ -95,6 +96,14 @@ npm run tdd
 * [documentation.js](https://github.com/documentationjs/documentation) - The documentation system for modern JavaScript
 * [apidoc](https://apidocjs.com/) - Inline Documentation for RESTful web APIs
 * [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown) - Generate markdown documentation from jsdoc-annotated JavaScript
+
+## FAQ
+
+_1. Can I use both JSDocs infered types and TypeScript annotations?_
+
+No, TypeScript draws a hard line between what functionalities it provides for `.js` and `.ts` files. TypeScript specific syntax is only available in `.ts` files. They want you to write TypeScript, not JavaScript with types.
+
+![TypeScript not allowing type annotations in .js files](docs/screenshot-ts-error-annotations.png)
 
 ## Random tips
 
