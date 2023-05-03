@@ -1,21 +1,16 @@
-import { describe } from "riteway"
+import test from "tape"
 
-import { sayHello, sayGoodbye } from "./hello-world"
+import { sayHello, sayGoodbye } from "./hello-world.js"
 
-describe("sayHello", async assert => {
-  assert({
-    given: "no arguments",
-    should: "return hello string",
-    actual: sayHello(),
-    expected: { beep: "hello lorem", boop: "hello ipsum" },
+test("sayHello", t => {
+  t.deepEqual(sayHello({ foo: "dolor" }), {
+    beep: "hello dolor",
+    boop: "hello ipsum",
   })
+  t.end()
 })
 
-describe("sayGoodbye", async assert => {
-  assert({
-    given: "no arguments",
-    should: "return goodbye string",
-    actual: sayGoodbye(),
-    expected: "goodbye",
-  })
+test("sayGoodbye", t => {
+  t.equal(sayGoodbye(), "goodbye")
+  t.end()
 })
