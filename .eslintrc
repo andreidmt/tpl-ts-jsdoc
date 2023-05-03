@@ -1,20 +1,25 @@
 {
-  "extends": [
-    // Prettier other plugins - https://github.com/asd-xiv/eslint-config
-    "@asd14/eslint-config/targets/node-ts"
-  ],
+  "extends": ["@asd14/eslint-config/targets/node-ts"],
+  "root": true,
+  "rules": {
+    // Delegate to TypeScript's noPropertyAccessFromIndexSignature
+    "dot-notation": "off",
+
+    // Disable relative imports since there's no build step and resolver
+    "no-relative-import-paths/no-relative-import-paths": "off",
+
+    // Allow importing devDependencies in config filles, tests, docs,
+    // examples, etc.
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.test-d.ts", "**/*.test.js"]
+      }
+    ]
+  },
   "settings": {
-    // Recommended if you use `eslint_d`. Configuring your editor to use `eslint_d`
-    // will speed up linting 10x, see github.com/mantoni/eslint_d.js
     "import/cache": {
       "lifetime": 5
     }
-  },
-  "rules": {
-    // "@typescript-eslint/ban-types": "off",
-    // "@typescript-eslint/ban-ts-comment": "off",
-
-    // All types are in JSDocs
-    "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 }
